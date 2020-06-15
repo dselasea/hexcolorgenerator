@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hex Color Generator</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      h1:hover {
+        transform: skew(-10deg);
+      }
+
+      .container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      button {
+        padding: 0.7rem 1.5rem;
+        border: 2px solid #000;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px #000;
+        transition: all 0.2s linear;
+        outline: none;
+      }
+
+      #color {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #000;
+        margin-bottom: 20px;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hex Color Generator</h2>
+      <div id="color"></div>
+      <h4></h4>
+      <button>Generate</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
